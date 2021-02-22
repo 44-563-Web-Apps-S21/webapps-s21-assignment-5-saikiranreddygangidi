@@ -8,6 +8,11 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<style>
+    .table-hover tbody tr:hover td, .table-hover tbody tr:hover th {
+  background-color: #f08a0e;
+}
+</style>
 </head>
 <body>
 <h1>Plants by Saikiran Reddy Gangidi</h1>
@@ -30,7 +35,7 @@
         <div class="col-md">dusty miller</div>
     </div>
 </div>
-<p> The second row will break first because div in second row are contains  class attribute value are col-md which display is horizontal until screen is 768px where "col-sm" is horizontal utill screen width is  576px  so when minimize browser md div's  breaks first 
+<p> The second row will break first because div in second row are contains  class attribute value are col-md which display is horizontal until screen is 768px where "col-sm" is horizontal utill screen width is  576px  so when minimize browser md div's  breaks first </p>
 </p>
 <div class="container">
     <img src="image1.jpg" class="img-responsive" width="300px" height="300px">
@@ -43,6 +48,54 @@
     <img src="image2.jpg" class="img-thumbnail" width="300px" height="300px">
     <img src="image3.jpg"class="img-thumbnail" width="300px" height="300px">
 </div>
-</p>
+<br>
+<table class="table table-striped table-bordered table-hover">
+    <thead>
+      <tr  class="table-success">
+        <th scope="col">Letter</th>
+        <th scope="col">Plant</th>
+        <th scope="col">City</th>
+        <th scope="col">Food</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr class="table-primary">
+        <th scope="row">g</th>
+        <td>Geranium</td>
+        <td>Galesburg</td>
+        <td>Grapefruit</td>
+      </tr>
+      <tr>
+        <th scope="row">a</th>
+        <td>Acacia</td>
+        <td>Alcorisa</td>
+        <td>apple</td>
+      </tr>
+      <tr class="table-primary">
+        <th scope="row">n</th>
+        <td>Nemesia</td>
+        <td>Nipawin</td>
+        <td>nuts</td>
+      </tr>
+      <tr >
+        <th scope="row">g</th>
+        <td>Gaura</td>
+        <td>Greensburg</td>
+        <td>garlic</td>
+      </tr>
+      <tr class="table-primary">
+        <th scope="row">i</th>
+        <td>impatiens</td>
+        <td>Ipkhi</td>
+        <td>iceberg</td>
+      </tr>
+      <tr>
+        <th scope="row">d</th>
+        <td>dusty miller</td>
+        <td>Deland</td>
+        <td>dill</td>
+      </tr>
+    </tbody>
+  </table>
 </body>
 </html>
